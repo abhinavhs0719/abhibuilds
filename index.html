@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AbhiBuilds — Abhinav Singh | Web Dev & AI Automation</title>
+  <meta name="description" content="Abhinav Singh — Student Developer learning Web Development and AI Automation. Building projects in public." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <nav class="nav" id="mainNav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">ABHI<span>BUILDS</span></a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#mission" class="nav-link">Mission</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="#content" class="nav-link">Content</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Contact Me</a>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="mobileMenu" role="navigation">
+    <a href="#" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#mission" class="nav-link">Mission</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#stack" class="nav-link">Stack</a>
+    <a href="#content" class="nav-link">Content</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary">Contact Me</a>
+  </div>
+
+  <!-- ==============================
+       MAIN
+  ============================== -->
+  <main>
+
+    <!-- ==============================
+         HERO SECTION
+    ============================== -->
+    <section class="section hero" id="home">
+      <div class="container" style="display:contents;">
+
+        <!-- Left column -->
+        <div class="hero-left">
+          <div class="hero-eyebrow fade-up">
+            <span class="hero-eyebrow-dot"></span>
+            <span class="hero-eyebrow-text">Building In Public</span>
+          </div>
+
+          <h1 class="hero-headline fade-up">
+            Learning Web Development.<br />
+            Building Projects.<br />
+            Sharing The Journey.</span><br />
+          </h1>
+
+          <p class="hero-sub fade-up">
+            I'm Abhinav Singh, documenting my journey through web development one project at a time. Currently learning Node.js, building projects, and sharing everything I learn on YouTube and LinkedIn.
+          </p>
+
+          <div class="hero-actions fade-up">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-socials fade-up">
+            <a href="https://linkedin.com/in/abhinavhs0719" class="hero-social-link" id="heroLinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <div class="hero-divider" aria-hidden="true"></div>
+            <a href="https://github.com/abhinavhs0719" class="hero-social-link" id="heroGitHub" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <div class="hero-divider" aria-hidden="true"></div>
+            <a href="https://www.youtube.com/@Abhinavhs0719" class="hero-social-link" id="heroYouTube" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-base)"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="hero-right fade-right">
+          <div class="hero-glow"></div>
+          <div class="hero-photo-wrap">
+            <div class="hero-photo">
+              <div class="photo-placeholder-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+                <p>Your Photo Here</p>
+              </div>
+            </div>
+            <div class="status-card" role="complementary" aria-label="Current status">
+              <div class="status-card-title">
+                <span class="live-dot"></span>
+                Currently Active
+              </div>
+              <div class="status-row">
+                <span class="status-label">Learning</span>
+                <span class="status-value">Node.js</span>
+              </div>
+              <div class="status-row">
+                <span class="status-label">Building</span>
+                <span class="status-value">abhibuilds.com</span>
+              </div>
+              <div class="status-row">
+                <span class="status-label">Sharing On</span>
+                <span class="status-value">YouTube & LinkedIn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==============================
+         ABOUT SECTION
+    ============================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">The person behind the builds</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story reveal-up">
+            <h2 class="display-lg">
+              Not a prodigy.<br />
+              Just someone <span class="text-accent">building anyway.</span>
+            </h2>
+
+            <div class="about-narrative">
+              <p class="body-lg">I didn't start with a roadmap. I started with a decision — that I'd rather build something imperfect and learn from it than wait until I felt "ready." That decision changed everything.</p>
+              <p class="body-lg">Web development wasn't love at first sight. It was more like stubborn curiosity. I broke things, fixed them wrong, broke them again — and somewhere in that cycle, I realized the building itself was the point. Not the destination.</p>
+              <p class="body-lg">Now I'm focused on building strong web development fundamentals. I'm currently learning Node.js, building projects, and documenting the journey publicly through YouTube, LinkedIn, and this website.</p>
+            </div>
+
+            <div class="about-journey reveal-up">
+              <p class="label" style="margin-bottom: var(--space-5);">The journey so far</p>
+              <div class="journey-steps">
+                <div class="journey-step">
+                  <div class="journey-dot"></div>
+                  <div class="journey-content">
+                    <span class="journey-label">The Start</span>
+                    <p class="journey-text">Decided to stop consuming and start creating. Wrote my first HTML file. It was ugly. I was proud of it.</p>
+                  </div>
+                </div>
+                <div class="journey-step">
+                  <div class="journey-dot"></div>
+                  <div class="journey-content">
+                    <span class="journey-label">The Grind</span>
+                    <p class="journey-text">Pushed through JavaScript confusion, CSS layout battles, and the humbling experience of reading other people's code.</p>
+                  </div>
+                </div>
+                <div class="journey-step">
+                  <div class="journey-dot"></div>
+                  <div class="journey-content">
+                    <span class="journey-label">The Shift</span>
+                    <p class="journey-text">Started exploring AI and automation while learning web development. Realized that understanding how to build things comes before automating them.</p>
+                  </div>
+                </div>
+                <div class="journey-step journey-step--current">
+                  <div class="journey-dot">
+                    <span class="live-dot" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:6px; height:6px;"></span>
+                  </div>
+                  <div class="journey-content">
+                    <span class="journey-label">Right Now</span>
+                    <p class="journey-text">Building in public. Documenting every stumble and win. This site is the proof of work.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual reveal-right">
+            <div class="about-photo-wrap">
+              <div class="about-photo">
+                <div class="about-photo-inner">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                  </svg>
+                  <p>Photo coming soon</p>
+                </div>
+              </div>
+              <div class="about-photo-accent" aria-hidden="true"></div>
+            </div>
+
+            <div class="about-direction card card-flat">
+              <div class="about-direction-header">
+                <div class="about-direction-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+                <span class="heading-md" style="font-size: var(--text-base);">Current Direction</span>
+              </div>
+              <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: var(--leading-loose); margin-top: var(--space-3);">
+               Currently learning Node.js and backend development while improving my web development skills through projects. Every project is shared publicly, and every lesson becomes part of the journey.
+              </p>
+              <div class="about-direction-tags">
+                <span class="direction-tag">Node.js</span>
+                <span class="direction-tag">AI Automation</span>
+                <span class="direction-tag">Building in Public</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         MISSION SECTION
+    ============================== -->
+    <section class="section mission-section" id="mission">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">What's live right now</span>
+        </div>
+
+        <div class="mission-header reveal-up">
+          <h2 class="display-lg">Current <span class="text-accent">Mission</span></h2>
+          <p class="body-lg" style="max-width: 52ch; margin-top: var(--space-4);">
+            Five lenses. One direction. This is what I'm doing, learning, building, sharing, and aiming for — right now.
+          </p>
+        </div>
+
+        <div class="mission-grid" id="missionGrid">
+          <div class="mission-loading">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         BUILD LOG SECTION
+    ============================== -->
+    <section class="section buildlog-section" id="buildlog">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">The paper trail</span>
+        </div>
+
+        <div class="buildlog-header reveal-up">
+          <div>
+            <h2 class="display-lg">Build <span class="text-accent">Log</span></h2>
+            <p class="body-lg" style="max-width: 48ch; margin-top: var(--space-4);">
+              Every entry is a real moment — something learned, shipped, written, or crossed off. No polish. Just the record.
+            </p>
+          </div>
+
+          <div class="buildlog-filters" id="buildlogFilters">
+            <button class="filter-btn filter-btn--active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Learning">Learning</button>
+            <button class="filter-btn" data-category="Building">Building</button>
+            <button class="filter-btn" data-category="Content">Content</button>
+            <button class="filter-btn" data-category="Milestone">Milestone</button>
+          </div>
+        </div>
+
+        <div class="buildlog-timeline" id="buildlogTimeline">
+          <div class="mission-loading" style="margin-top: var(--space-12);">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         FEATURED PROJECTS
+    ============================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">Shipped, not imagined</span>
+        </div>
+
+        <div class="projects-header reveal-up">
+          <h2 class="display-lg">Featured <span class="text-accent">Projects</span></h2>
+          <p class="body-lg" style="max-width: 52ch; margin-top: var(--space-4);">
+            Real builds, real lessons. Every card is a thing that exists on the internet and taught me something to make.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Portfolio Website -->
+          <article class="project-card reveal-up">
+            <div class="project-screenshot">
+              <div class="project-screenshot-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
+                </svg>
+                <p>abhibuilds.com</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status project-status--live">
+                  <span class="project-status-dot"></span>
+                  Live
+                </span>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                Designed and coded from a blank file. Zero templates. The design system, color tokens, animation language — all built from scratch. This is the proof-of-work site that also doubles as the accountability record.
+              </p>
+              <div class="project-stack">
+                <span class="stack-badge stack-badge--html">HTML</span>
+                <span class="stack-badge stack-badge--css">CSS</span>
+                <span class="stack-badge stack-badge--js">JavaScript</span>
+              </div>
+              <div class="project-lessons">
+                <p class="project-lessons-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  Lesson learned
+                </p>
+                <p class="project-lessons-text">
+                  Design tokens and a consistent spacing system aren't over-engineering — they're the thing that makes iteration fast. Spent more time up front on the system; spent far less time fighting CSS later.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link project-link--demo" id="project1Live" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live site
+                </a>
+                <a href="#" class="project-link project-link--github" id="project1GitHub" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Calculator App -->
+          <article class="project-card reveal-up">
+            <div class="project-screenshot">
+              <div class="project-screenshot-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="14" y1="18" x2="16" y2="18"/>
+                </svg>
+                <p>Simon Game</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status project-status--shipped">
+                  <span class="project-status-dot"></span>
+                  Shipped
+                </span>
+              </div>
+              <h3 class="project-title">Simon Game</h3>
+              <p class="project-desc">
+                A browser-based memory game built using JavaScript. The project helped me understand event handling, game logic, state management, and user interaction while recreating a classic game experience.
+              </p>
+              <div class="project-stack">
+                <span class="stack-badge stack-badge--html">HTML</span>
+                <span class="stack-badge stack-badge--css">CSS</span>
+                <span class="stack-badge stack-badge--js">JavaScript</span>
+              </div>
+              <div class="project-lessons">
+                <p class="project-lessons-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  Lesson learned
+                </p>
+                <p class="project-lessons-text">
+                  Complex projects are just small pieces connected together. Breaking game logic into steps made debugging much easier.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link project-link--demo" id="project2Live" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live demo
+                </a>
+                <a href="#" class="project-link project-link--github" id="project2GitHub" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Drum Kit-->
+                    <article class="project-card reveal-up">
+            <div class="project-screenshot">
+              <div class="project-screenshot-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="14" y1="18" x2="16" y2="18"/>
+                </svg>
+                <p>Drum Kit</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status project-status--shipped">
+                  <span class="project-status-dot"></span>
+                  Shipped
+                </span>
+              </div>
+              <h3 class="project-title">Drum Kit</h3>
+              <p class="project-desc">
+                A browser-based drum kit built using JavaScript. The project helped me understand event handling, audio manipulation, and user interaction while creating a fun and interactive experience.
+              </p>
+              <div class="project-stack">
+                <span class="stack-badge stack-badge--html">HTML</span>
+                <span class="stack-badge stack-badge--css">CSS</span>
+                <span class="stack-badge stack-badge--js">JavaScript</span>
+              </div>
+              <div class="project-lessons">
+                <p class="project-lessons-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  Lesson learned
+                </p>
+                <p class="project-lessons-text">
+                  User experience improves dramatically when interactions feel immediate and responsive.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link project-link--demo" id="project2Live" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live demo
+                </a>
+                <a href="#" class="project-link project-link--github" id="project2GitHub" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+ <!-- Dice Game-->
+  <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-grid">
+                          <article class="project-card reveal-up">
+            <div class="project-screenshot">
+              <div class="project-screenshot-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="14" y1="18" x2="16" y2="18"/>
+                </svg>
+                <p>Dice Challenge</p>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-status project-status--shipped">
+                  <span class="project-status-dot"></span>
+                  Shipped
+                </span>
+              </div>
+              <h3 class="project-title">Dice Challenge</h3>
+              <p class="project-desc">
+                A simple dice rolling game built using JavaScript. The project helped me understand DOM manipulation, event handling, and creating interactive user experiences.
+              </p>
+              <div class="project-stack">
+                <span class="stack-badge stack-badge--html">HTML</span>
+                <span class="stack-badge stack-badge--css">CSS</span>
+                <span class="stack-badge stack-badge--js">JavaScript</span>
+              </div>
+              <div class="project-lessons">
+                <p class="project-lessons-label">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  Lesson learned
+                </p>
+                <p class="project-lessons-text">
+                 Even simple projects teach important concepts when you build them yourself instead of copying code blindly.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link project-link--demo" id="project2Live" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live demo
+                </a>
+                <a href="#" class="project-link project-link--github" id="project2GitHub" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>              
+
+
+    <!-- ==============================
+         TECH STACK
+    ============================== -->
+    <section class="section stack-section" id="stack">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">What I work with</span>
+        </div>
+
+        <div class="stack-header reveal-up">
+          <h2 class="display-lg">Tech <span class="text-accent">Stack</span></h2>
+          <p class="body-lg" style="max-width: 52ch; margin-top: var(--space-4);">
+            Tools I've actually used, not just tools I've heard of. The list grows as projects demand it.
+          </p>
+        </div>
+
+        <div class="stack-groups">
+          <div class="stack-group reveal-up">
+            <div class="stack-group-header">
+              <div class="stack-group-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="stack-group-title">Frontend</h3>
+            </div>
+            <div class="stack-badges-wrap">
+              <span class="tech-badge tech-badge--html">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                HTML5
+              </span>
+              <span class="tech-badge tech-badge--css">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                CSS3
+              </span>
+              <span class="tech-badge tech-badge--js">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                JavaScript
+              </span>
+              <span class="tech-badge tech-badge--responsive">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="tech-badge-icon"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                Responsive Design
+              </span>
+            </div>
+          </div>
+
+          <div class="stack-group reveal-up">
+            <div class="stack-group-header">
+              <div class="stack-group-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3 class="stack-group-title">Backend</h3>
+            </div>
+            <div class="stack-badges-wrap">
+              <span class="tech-badge tech-badge--node">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.890V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L1.897,18.587C1.335,18.269,1,17.667,1,17.021V6.921 c0-0.648,0.335-1.249,0.897-1.568l8.795-5.079c0.549-0.314,1.279-0.314,1.827,0l8.793,5.079 c0.562,0.319,0.897,0.920,0.897,1.568v10.100c0,0.646-0.335,1.245-0.897,1.563l-8.793,5.078C12.640,23.916,12.320,24,11.998,24z"/></svg>
+                Node.js
+              </span>
+              <span class="tech-badge tech-badge--git">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.6.177-.175.369-.302.578-.397V8.826c-.209-.093-.398-.218-.578-.397-.543-.541-.676-1.337-.404-1.996L7.652 3.726l-7.19 7.187c-.604.604-.604 1.582 0 2.19l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.428c.602-.603.602-1.582-.012-2.222z"/></svg>
+                Git
+              </span>
+            </div>
+          </div>
+
+          <div class="stack-group reveal-up">
+            <div class="stack-group-header">
+              <div class="stack-group-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <h3 class="stack-group-title">Tools</h3>
+            </div>
+            <div class="stack-badges-wrap">
+              <span class="tech-badge tech-badge--vscode">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 19.88V4.12a1.5 1.5 0 0 0-.85-1.533zM16.51 19.5l-7.65-6.34L16.51 6.5z"/></svg>
+                VS Code
+              </span>
+              <span class="tech-badge tech-badge--github">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </span>
+              <span class="tech-badge tech-badge--npm">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="tech-badge-icon"><path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"/></svg>
+                npm
+              </span>
+              <span class="tech-badge tech-badge--cli">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="tech-badge-icon"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                Terminal / CLI
+              </span>
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTENT HUB
+    ============================== -->
+    <section class="section content-section" id="content">
+      <div class="container">
+        <div class="section-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span class="label">Learning out loud</span>
+        </div>
+
+        <div class="content-header reveal-up">
+          <div>
+            <h2 class="display-lg">Content <span class="text-accent">Hub</span></h2>
+            <p class="body-lg" style="max-width: 52ch; margin-top: var(--space-4);">
+             Documenting my web development journey through YouTube videos and LinkedIn posts. Sharing projects, lessons, mistakes, and progress as I learn.
+            </p>
+          </div>
+
+          <div class="content-search-wrap">
+            <div class="content-search">
+              <svg class="content-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="search" id="contentSearch" class="content-search-input" placeholder="Search content..." aria-label="Search content" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab switcher -->
+        <div class="content-tabs" id="contentTabs" role="tablist">
+          <button class="content-tab content-tab--active" data-tab="youtube" role="tab" aria-selected="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="content-tab-icon"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            YouTube
+          </button>
+          <button class="content-tab" data-tab="linkedin" role="tab" aria-selected="false">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="content-tab-icon"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </button>
+        </div>
+
+        <!-- YouTube content -->
+        <div class="content-panel" id="panel-youtube" role="tabpanel">
+          <div class="content-grid" id="youtubeGrid"></div>
+          <div class="content-empty is-hidden" id="yt-empty">
+            <p>No videos match your search. Try a different keyword.</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn content -->
+        <div class="content-panel is-hidden" id="panel-linkedin" role="tabpanel">
+          <div class="content-grid" id="linkedinGrid"></div>
+          <div class="content-empty is-hidden" id="li-empty">
+            <p>No posts match your search. Try a different keyword.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+    ============================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-inner reveal-up">
+          <div class="contact-text">
+            <div class="section-eyebrow" style="margin-bottom: var(--space-8);">
+              <span class="eyebrow-line"></span>
+              <span class="label">Get in touch</span>
+            </div>
+            <h2 class="display-lg">
+              Let's Connect.<br />
+            Share Ideas.</br><span class="text-accent">Learn Together.</span>
+            </h2>
+            <p class="body-lg" style="max-width: 44ch; margin-top: var(--space-5);">
+              I'm always open to connecting with developers, creators, and curious builders. If you're learning, building, or documenting your journey too, I'd love to hear from you.
+          </div>
+
+          <div class="contact-links-wrap">
+            <a href="mailto:abhibuilds7@gmail.com" class="contact-link contact-link--email">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-link-body">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">abhibuilds7@gmail.com</span>
+              </div>
+              <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <a href="https://linkedin.com/in/abhinavhs0719" class="contact-link" id="contactLinkedIn" target="_blank" rel="noopener">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-link-body">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/abhinavhs0719</span>
+              </div>
+              <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <a href="https://github.com/abhinavhs0719" class="contact-link" id="contactGitHub" target="_blank" rel="noopener">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </div>
+              <div class="contact-link-body">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/abhinavhs0719</span>
+              </div>
+              <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+
+            <a href="https://www.youtube.com/@Abhinavhs0719" class="contact-link" id="contactYouTube" target="_blank" rel="noopener">
+              <div class="contact-link-icon contact-link-icon--yt">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+              </div>
+              <div class="contact-link-body">
+                <span class="contact-link-label">YouTube</span>
+                <span class="contact-link-value">youtube.com/@abhinavhs0719</span>
+              </div>
+              <svg class="contact-link-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">ABHI<span>BUILDS</span></div>
+          <p class="footer-desc">
+           Building in public and documenting my journey through web development, projects, and continuous learning.
+          </p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/in/abhinavhs0719" class="footer-social" id="footerLinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/abhinavhs0719" class="footer-social" id="footerGitHub" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@Abhinavhs0719" class="footer-social" id="footerYouTube" aria-label="YouTube" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--bg-base)"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#stack" class="footer-link">Stack</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Work</p>
+          <ul class="footer-links">
+            <li><a href="#mission" class="footer-link"> Web Development</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#stack" class="footer-link">Learning Journey</a></li>
+            <li><a href="#content" class="footer-link">Content</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Connect</p>
+          <ul class="footer-links">
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="https://linkedin.com/in/abhinavhs0719" class="footer-link" id="footerLinkedIn2" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@Abhinavhs0719" class="footer-link" id="footerYouTube2" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://github.com/abhinavhs0719" class="footer-link" id="footerGitHub2" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 <span>AbhiBuilds</span>. Built by Abhinav Singh, for the journey.
+        </p>
+        <div class="footer-badge">
+          <span class="footer-badge-dot"></span>
+          Building in Public
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
