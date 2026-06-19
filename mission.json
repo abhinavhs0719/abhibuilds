@@ -1,0 +1,31 @@
+{
+  "cards": [
+    {
+      "type": "Current Focus",
+      "title": "Web Development",
+      "body": "Learning frontend and backend fundamentals while building real projects from scratch.",
+      "featured": true
+    },
+    {
+      "type": "Current Learning",
+      "title": "Node.js",
+      "body": "Learning backend fundamentals, routing, servers, and how web applications work behind the scenes."
+
+    },
+    {
+      "type": "Current Project",
+      "title": "abhibuilds.com",
+      "body": "Building my personal website publicly while documenting every lesson, challenge, and improvement."
+    },
+    {
+      "type": "Content Engine",
+      "title": "YouTube + LinkedIn",
+      "body": "Sharing tutorials, lessons, mistakes, and progress to build accountability and communication skills."
+    },
+    {
+      "type": "Long-Term Goal",
+      "title": "Developer + Builder",
+      "body": "Build useful products, improve my problem-solving skills, document the journey publicly, and eventually create systems that help people."
+    }
+  ]
+}

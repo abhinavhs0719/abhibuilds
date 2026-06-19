@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "date": "Jun 2026",
+      "title": "Built and launched abhibuilds.com",
+      "description": "Designed and coded my first personal portfolio website from scratch while learning web development publicly.",
+      "category": "Milestone",
+      "link": null
+    },
+    {
+      "date": "Jun 2026",
+      "title": "Published Intermediate HTML tutorial",
+      "description": "Created and uploaded a YouTube tutorial covering nested lists, attributes, anchor tags, image tags, and HTML boilerplate.",
+      "category": "Content",
+      "link": null
+    },
+    {
+      "date": "Jun 2026",
+      "title": "Reached 1,800+ impressions on LinkedIn",
+      "description": "My HTML learning post became my highest-performing LinkedIn post and validated the build-in-public approach.",
+      "category": "Content",
+      "link": null
+    },
+    {
+      "date": "Jun 2026",
+      "title": "Published HTML Basics Explained Simply",
+      "description": "Uploaded a beginner-friendly HTML tutorial on YouTube as part of my public learning journey.",
+      "category": "Content",
+      "link": null
+    },
+    {
+      "date": "Jun 2026",
+      "title": "Published first web development video",
+      "description": "Shared my first YouTube video documenting 30 days of learning web development.",
+      "category": "Content",
+      "link": null
+    },
+    {
+      "date": "May 2026",
+      "title": "Started building in public",
+      "description": "Committed to documenting projects, lessons, mistakes, and progress through LinkedIn and YouTube.",
+      "category": "Milestone",
+      "link": null
+    }
+  ]
+}
