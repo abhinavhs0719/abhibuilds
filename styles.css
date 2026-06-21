@@ -2333,3 +2333,17 @@ ul { list-style: none; }
     transparent
   );
 }
+
+@media (max-width: 1024px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
